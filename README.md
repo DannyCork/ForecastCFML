@@ -30,13 +30,15 @@ This calls the Forecast.io api and returns the temperature for 52.5167,13.3833 (
 Version
 ----
 
-1.0
+1.0 Written by DannyD http://www.ColdFusion10.com
 
 License
 ----
 
 Apache
 
-*Free Software, Hell Yeah!*
 
-  
+Testing
+----
+
+Tested against Railo 4. Should work with ColdFusion (might have to import the https cert for https://api.forecast.io/forecast http://helpx.adobe.com/coldfusion/kb/import-certificates-certificate-stores-coldfusion.html)

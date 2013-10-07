@@ -8,7 +8,7 @@
 	<cfargument name="lat" Type="string" required="false" default="16.7753">
 	<cfargument name="long" Type="string" required="false" default="-3.0083">
 
-	<cfset baseUrl="http://api.forecast.io/forecast">
+	<cfset baseUrl="https://api.forecast.io/forecast">
 	<cfset entireUrl="#baseUrl#/#apiKey#/#lat#,#long#">
 	<cfhttp url="#entireUrl#" method="GET" resolveurl="Yes" result="result"/>
 		<cfoutput>
