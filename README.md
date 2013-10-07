@@ -6,8 +6,8 @@ ForecastCFML is a wrapper for the Forecast.io v2 api. Forecast.io claims to be "
 Usage
 -----------
 
-You need an account with Forecast.io. Replace yourForecastIOApiKey with your valid api key.   
-To use call the getWeather() function which takes three arguments:
+You need an account with Forecast.io. Replace ForecastIOApiKey with your valid api key.   
+To use, call the getWeather() function which takes three arguments:
 
 * apiKey (optional)
 * latitude (required)
@@ -41,4 +41,4 @@ Apache
 Testing
 ----
 
-Tested against Railo 4. Should work with ColdFusion (might have to import the https cert for https://api.forecast.io/forecast http://helpx.adobe.com/coldfusion/kb/import-certificates-certificate-stores-coldfusion.html)
+Tested against Railo 4. Should work with ColdFusion (might have to import the https cert for https://api.forecast.io/forecast).
