@@ -30,7 +30,7 @@ This calls the Forecast.io api and returns the temperature for 52.5167,13.3833 (
 Version
 ----
 
-1.0 Written by DannyD http://www.ColdFusion10.com
+1.0 Written by DannyD
 
 License
 ----
