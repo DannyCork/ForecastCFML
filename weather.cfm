@@ -14,29 +14,29 @@
 <cfset weather = createObject("component", "ForecastCFML.Components.weather") />
 
 <cfoutput>	
-<article class="card">
-<header>
-  <h3>#weather.getWeather().headerCityZip#</h3>
-</header>
-<div class="pure-g WeatherForecast">
-  <div class="pure-u-1-2 skycon_cls">                
-	<input type="hidden" id="IconID" value="#weather.getWeather().Icon#"> <!--Forecast.io icon-->
-    <canvas class="SkyConIs" width="75" height="85"></canvas>
-  </div>
-  <div class="pure-u-1-2">
-	<span class="degree_cls">#Ceiling(weather.getWeather().Temp)#&deg;</span>
-	<br>
-	<span>#weather.getWeather().NowSummary#.</span>
-	<br>
-	<span>
-	  Feels like <span class="feelsLike_cls">#Ceiling(weather.getWeather().FeelsLike)#&deg;</span>
-	</span>
-  </div>            
-</div>
-<footer>
-  <p><span>#weather.getWeather().DailySummary#</span></p>
-</footer>
-</article>
+    <article class="card">
+    <header>
+      <h3>#weather.getWeather().headerCityZip#</h3>
+    </header>
+    <div class="pure-g WeatherForecast">
+      <div class="pure-u-1-2 skycon_cls">                
+        <input type="hidden" id="IconID" value="#weather.getWeather().Icon#"> <!--Forecast.io icon-->
+        <canvas class="SkyConIs" width="75" height="85"></canvas>
+      </div>
+      <div class="pure-u-1-2">
+        <span class="degree_cls">#Ceiling(weather.getWeather().Temp)#&deg;</span>
+        <br>
+        <span>#weather.getWeather().NowSummary#.</span>
+        <br>
+        <span>
+          Feels like <span class="feelsLike_cls">#Ceiling(weather.getWeather().FeelsLike)#&deg;</span>
+        </span>
+      </div>            
+    </div>
+    <footer>
+      <p><span>#weather.getWeather().DailySummary#</span></p>
+    </footer>
+    </article>
 </cfoutput>
 
 <!--scripts-->
