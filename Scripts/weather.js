@@ -5,4 +5,4 @@ var Skycon = new Skycons({
 var weatherType = document.getElementById('IconID').value,
   	elements = document.getElementsByClassName('SkyConIs');
 Skycon.set(elements[0], weatherType);
-Skycon.play();
+Skycon.play(); //animation
