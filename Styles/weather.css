@@ -1,0 +1,33 @@
+.WeatherForecast {
+  margin-left: 10px;
+}
+
+.WeatherForecast > div {
+  margin-top: 3px;
+}
+
+.skycon_cls {
+  text-align: center;
+}
+
+.degree_cls {
+  text-align: center;
+  font-size: 50px;
+}
+
+.maxmin_cls {
+  text-align: left;
+}
+
+.Label {
+  font-size: 15px;
+}
+
+.degreeShow {
+  font-weight: bold;
+}
+
+.feelsLike_cls{
+  font-size: 25px; font-weight: bold;
+  text-decoration: underline;
+}
