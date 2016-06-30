@@ -13,7 +13,7 @@
     <cfreturn this>
   </cffunction>
   
-  <!---DNS--->
+  <!---Get Secrets--->
   <cffunction name="getSecrets" output="no" access="remote" returntype="string" hint="Returns secrets">
   	<cfargument name="secretWht" type="numeric" required="yes">
     <cfreturn variables.secrets_arr[1][#ARGUMENTS.secretWht#]>
