@@ -12,6 +12,7 @@
     <cfset Forecast_struct = StructNew()> <!--Structure to hold Forecast call returns-->
     
     <cfset entireURL = "#baseURL#/#apiKey#/#lat#,#long#">
+    <!--URL resolve-->
     <cfhttp url="#entireUrl#" method="GET" resolveurl="Yes" result="result"/>
 	  <cfif result.statuscode eq "200 OK">
 		<cfset cfData = DeserializeJSON(result.filecontent)>
@@ -20,7 +21,7 @@
         <cfset Forecast_struct.NowSummary = cfData.currently.summary>
         <cfset Forecast_struct.FeelsLike  = cfData.currently.apparentTemperature>
         <cfset Forecast_struct.Icon  = cfData.currently.Icon>	
-        <cfset Forecast_struct.DailySummary  = cfData.daily.data[1].summary>	
+        <cfset Forecast_struct.DailySummary  = cfData.daily.data[1].summary> 	
 	  </cfif>
     <cfreturn Forecast_struct>
   </cffunction>
